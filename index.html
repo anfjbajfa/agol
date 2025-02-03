@@ -189,7 +189,7 @@
 
         // adding us airport
         const usaAirportLayer = new FeatureLayer({
-          url: "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/US_Airports_mad/FeatureServer",
+          url: "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/USairports/FeatureServer",
           renderer: airportRenderer,
           definitionExpression: "Fac_Type = 'AIRPORT'", //adding sql to filter for airports
           labelingInfo: [airportLabels] //adding the labels
@@ -231,7 +231,7 @@
 
         // adding us airport
         const usaHeliLayer = new FeatureLayer({
-          url: "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/US_Airports_mad/FeatureServer",
+          url: "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/USairports/FeatureServer",
           renderer: heliRenderer,
           definitionExpression: "Fac_Type = 'HELIPORT'", //adding sql to filter for airports
           labelingInfo: [HeliLabels] //adding the labels
